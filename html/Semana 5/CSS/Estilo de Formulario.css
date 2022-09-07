@@ -99,6 +99,20 @@ footer{
     text-align: center;
     color:darkblue;
 }
+/* seccion de vista en celulares */
+@media (min-width:350px) and (max-width:850px) {
+    section form label{
+    max-width: 100%;
+    height: auto;
+    font-size: 80%;
+    }
+    
+    form fieldset > * {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+ }
+}
 
 
 
