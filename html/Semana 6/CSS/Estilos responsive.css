@@ -1,45 +1,43 @@
-/* seccion INICIAL */
 *{
     box-sizing: border-box;
-    margin: 0; /* Inicializa margenes*/
-    padding: 0;/* Inicializa padding*/
+    margin: 0; 
+    padding: 0;
 }
 html{
-    max-height: 100%; /* se adapte altura pag web cualq dispositivo*/
+    max-height: 100%;
 }
 body{
     font-family: Tahoma;
     font-size: 18px;
 }
-/* seccion cabecera PC*/
+
 #header{
     background-color: lightsteelblue;
     border:2px solid blue;
     border-radius: 20px 20px 10px 10px;
     display: flex;
-    flex-direction: row;/*dirección horizontal o en fila*/
-    justify-content: center;/*alinea horizontalmente*/
-    align-items: center;/*alinea verticalmente*/
-    grid-area: header;/*asigna nombre al contenedor*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
 }
 
-/* seccion menu */
 ul{
     padding: 0 0;
     margin: 0 1px;
 }
 li{
     display: inline;
-    list-style: none;/* quitar las viñetas*/
+    list-style: none;
     margin: 0 5px;
     font: bold 12px Verdana;
 }
 a{
     color: white;
-    text-decoration: none; /* quitar las lineas subrayadas*/
+    text-decoration: none;
 }
 #menu{
-    grid-area: nav;/* asigna nombre a contenedor*/
+    grid-area: nav;
     background-color: blue;
     border:2px solid green;
     border-radius: 22px;
@@ -50,7 +48,6 @@ a{
     padding: 5px;
     margin:5px;
 }
-/* nuevo estilo para buscador */
 .buscarbox input{
  height: 25px;
  width: 0px;
@@ -60,26 +57,24 @@ a{
  padding-right: 50px;
  transition: 0.8s ease;    
 }
-/* Se aplica una pseudoclase hover para expandir ancho de buscador */
+
 .buscarbox input:hover{
     width: 150px;
     padding-left: 10px;
-    outline: none; /* quitar bordes*/
+    outline: none;
     } 
 
-/* seccion contenido */
 #main{
-    grid-area: main;/* matricula nombre al contenedor section para grid*/
+    grid-area: main;
     background-color: white;
-    border:2px solid green;
-    /* se define ancho y altura contenedor para ajustar a vista a dispositivo actual*/
+    border:2px solid red;
     max-width:100%;
     height: auto;
 }
 figure, figcaption{
     display: inline;
     margin: 45px;
-    padding: 5px 5px;   
+    padding: 5px 5px;  
 }
 .programa{
     display: inline-block;
@@ -96,23 +91,20 @@ section article{
     background-color: lightcyan;
     width: 200px;
     margin: 20px;
+    height: auto;
     } 
-
-/* seccion barra lateral */    
+   
 #sidebar{
-        grid-area: sidebar;/* se asigna nombre a contenedor */
+        grid-area: sidebar;
         display: flex;
-        flex-direction: column;/* se define dirección en forma columna*/
+        flex-direction: column;
         justify-content: center; 
         align-items: center;
 }
-/* se define ancho y altura contenedor para ajustar a vista de dispositivo actual*/
 iframe{
         max-width: 100%;
         height: auto;
   }
-
-/* seccion pie de pagina*/
 #footer{
     grid-area: footer;/* se asigna nombre a contenedor */
     background-color: teal;
@@ -120,9 +112,6 @@ iframe{
     border-radius: 20px 20px 10px 10px;
     clear:both;
  }
-
-/* seccion CSS GRID DISEÑO WEB RESPONSIVE*/
-/* Se define estilos al contenedor grid en general vista PC*/
 #grid-container > * {
     text-align: center;
     box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
@@ -138,7 +127,7 @@ iframe{
     "main main sidebar" 300px
     "main main sidebar" 250px
     "footer footer footer" 150px /
-    1000px 150px 300px; 
+    auto 150px 300px; 
     }
 #redes a {
         padding: 0;
@@ -147,12 +136,10 @@ iframe{
 #redes a i:hover{
      transform: scaleX(1.5);  
   }
-/* Estilos a todos los iconos fontawesome */
 i[class^="fa"]{
     color:white;
     font-size: 18px;
 }
-/*iconos fontawesome BAR SOCIAL*/
 .fa-youtube-square{
     font-size: 32px;
     background-color: red;
@@ -173,18 +160,16 @@ i[class^="fa"]{
     font-size: 32px;
      background-color: orangered;
 }
-/* ultimos cambios hechos a icono hamburgueza */
 .fa-bars{
 font-size: 30px;
 color:black;
 }
-/* nuevo estilo menu hamburguesa */
 .openmenu {
     display: none;
     cursor: pointer;
     font-size: 2 rem;
  }
-/*-----SECCION VISTA DE TABLETS------*/
+
 @media (max-width:1024px){
     #grid-container{
         grid-template: 
@@ -194,7 +179,7 @@ color:black;
         "sidebar sidebar" 650px
         "footer footer" 100px /
          250px 450px; 
-         font-size: 75%;/*Cambia el tamaño de la letra*/
+         font-size: 75%;
     }
     #menu{
         background-color: blue;
@@ -207,10 +192,10 @@ color:black;
     }
     #main{
     display: flex;
-    flex-direction: column;/* cambia la forma de direccion de fila a col*/
+    flex-direction: column;
     justify-content: space-between;
     align-items:center;
-    flex-wrap: wrap;/*se define el auto ajuste de ancho dispostivo pasa a sgte. linea*/
+    flex-wrap: wrap;
     max-width:100%;
        
     }
@@ -234,7 +219,6 @@ iframe{
     padding: 5px;
 }
 }
-/*----- SECCION VISTA DE CELULAR ------*/
     @media (max-width:640px){
     #grid-container{
     grid-template: 
