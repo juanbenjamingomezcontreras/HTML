@@ -1,39 +1,31 @@
-body {
+:root{
+    --fondo:black;
+    --degrad:linear-gradient(90deg, black, red);
+}
 
-    font-family: 'Titillium Web', sans-serif;
-    
+
+body {
+    font-family: 'Bungee Spice', cursive;
+    background-color: var(--fondo);
+    background-image: url(../Img/cool-background.png)
     }
     
     .navbar-brand {
-    
     font-size: 20px;
-    
     color: #000;
-    
     font-weight: bold;
-    
     }
     
     #testimonial {
-    
-    background: #f1f1f1;
-    
+    /*background: #f1f1f1;*/
     padding: 50px 0 30px 0;
-    
     text-align:center;
-    
     margin-top: 40px;
-    
     }
     
     #contact {
-    
     display: flex;
-    
     flex-direction: row;
-    
     justify-content:space-around ;
-    
     flex-wrap: wrap
-    
     }
