@@ -1,13 +1,38 @@
+@font-face {
+    font-family: GODOFWAR;
+    src: url(../fonts/godofwar/GODOFWAR.TTF);
+}
+
+
+
 :root{
     --fondo:black;
     --degrad:linear-gradient(90deg, black, red);
+    --font:white;
 }
 
 
 body {
-    font-family: 'Bungee Spice', cursive;
+    font-family: GODOFWAR;
     background-color: var(--fondo);
-    background-image: url(../Img/cool-background.png)
+    background-image: url(../Img/cool-background.png);
+    color:var(--font);
+    
+    }
+
+    .GODOFWAR {
+        color: #fff;
+        margin-top: 30%;
+        text-shadow:
+            0 0 5px rgba(0,178,255,1),
+            0 0 10px rgba(0,178,255,1),
+            0 0 20px rgba(0,178,255,1),
+            0 0 40px rgba(38,104,127,1),
+            0 0 80px rgba(38,104,127,1),
+            0 0 90px rgba(38,104,127,1),
+            0 0 100px rgba(38,104,127,1),
+            0 0 140px rgba(38,104,127,1),
+            0 0 180px rgba(38,104,127,1);
     }
     
     .navbar-brand {
