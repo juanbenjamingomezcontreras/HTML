@@ -7,6 +7,7 @@
     <title>Transmilenio</title>
     <!-- link de sitio sweetalert mensajes más elegantes-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="ccs3/style.css">
 
 </head>
 <body>
@@ -16,15 +17,14 @@
         <script>
             var saldo=0;
             const tm=2650;
-            saldo= parseInt(prompt("Ingrese saldo de su tarjeta de Transmilenio"));
-            if( saldo >= tm )
-            {
-            alert("Ingrese a Sistema Transmilenio");
+            saldo= parseInt(prompt("Ingrese saldo de su tarjeta tu llave"));
+            // PROCESO
+            if(saldo>=tm){
+                swal("Señor usuario", "Ingresea sistema transmilenio", "success");
+            }else{
+                swal("Señor usuario", "Recargue tarjeta", "saldo insuficiente", "error");
             }
-            else
-            {
-            alert("Recargue tarjeta, SALDO INSUFICIENTE ...");
-            }
+            
         </script>
     </center>
 </body>
