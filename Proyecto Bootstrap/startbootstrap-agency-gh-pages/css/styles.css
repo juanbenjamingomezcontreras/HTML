@@ -7781,7 +7781,8 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: black !important;
+  /*color: black !important;*/
+  
 }
 
 .text-black-50 {
@@ -11319,11 +11320,14 @@ p {
   font-family: godofwar;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 400;
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
+  color:#7FFF00;
+  
+  
 }
 
 @media (min-width: 768px) {
@@ -11746,7 +11750,7 @@ section#contact {
   background-position: center;
 }
 section#contact .section-heading {
-  color: #fff;
+  color: #7FFF00;
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
