@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Boletin de notasde Programacion PAE</h1>
+        <H3>NOTA1=DESEMPEÑO // NOTA2=TALLERES// NOTA3=CUESTIONARIO</H3>
+
+        <Script>
+
+            let nota_STD, suma, prom;
+            suma=0;
+            prom=0;
+            num=1;
+            nomb_std=prompt(" Ingrese nombre del estudiante");
+            // Proceso
+            while (num<=3){
+                nota_STD=parseFloat(prompt("Ingrese nota [1 a 5]:"));
+                suma+=nota_STD;//Acumulador
+                num++;//Contador
+                }
+                prom=suma/3;
+                //validadr nota final
+                prom=suma/3;
+                if (prom>=3.0){
+                document.write(" Estudiante "+ " "+nomb_std);
+                document.write("<br>"+"<br>");
+                document.write("Nota final de programacion es"+" "+ prom.toFixed(2)+"<br>"+"<br>");
+                swal("FELICITACIONES -- APROBASTE LA MATERIA DE PROGRAMACION PAE", "success");
+                }
+                else{
+                document.write(" Estudiante "+ " "+nomb_std);
+                document.write("<br>"+"<br>");
+                document.write("Nota final de programacion es"+" "+ prom.toFixed(2)+"<br>"+"<br>");
+                swal("REPRUEBA MATERIA PROGRAMACION PAE","Error");
+                }
+
+
+        </Script>
+
+    </center>
+</body>
+</html>
