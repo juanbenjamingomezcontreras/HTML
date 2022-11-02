@@ -1,0 +1,42 @@
+body{
+    background-color: whitesmoke;
+
+}
+h1,h2{
+    color:black;
+    font-family:sf_distant_symbols ;
+}
+form{
+    border-style: solid;
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    background-color: yellowgreen;
+    border-radius: 30px;
+}
+#boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    }
+button{
+    background-color: lightgray;
+    border-radius: 40px;
+    width:150px;
+    height:100px;
+    font-weight:bold;
+}
+button:hover{
+    background-color:gold ;
+    transition: 0.4s;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;  
+    justify-content: center;
+}
+@font-face {
+    font-family: sf_distant_symbols;
+    src: url(../font/sf_distant_symbols/SF\ Distant\ Galaxy\ Outline\ Italic.ttf);
+}
