@@ -1,0 +1,55 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+@font-face {
+    font-family: back_to_the_future ;
+    src: url(../font/back_to_the_future/BTTF.ttf);
+}
+h1{
+    font-family: back_to_the_future;
+    color: goldenrod;
+    padding: 35px;
+    margin: auto;
+}
+h2{
+    font-family: back_to_the_future;
+    padding: 8px;
+    margin: auto;  
+
+}
+form{
+    border: 4px solid black;
+    border-radius: 15px;
+    padding: 35px;
+    margin: auto;
+    width: 60%;
+    background: linear-gradient(#000046, #1cb5e0);  
+    color: goldenrod;
+    font-weight: bold;
+    
+}
+#boton{
+    display: flex;
+    justify-content:space-evenly;
+    padding-left: 10px;
+}
+button{
+    background: linear-gradient(#000046, #1cb5e0);  
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    color: goldenrod;
+    font-weight: bold;
+}
+button:hover{
+    -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  transition: 0.3s;
+  box-shadow: 20px 10px 10px goldenrod    ;
+}
+
